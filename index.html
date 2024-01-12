@@ -6,142 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.cdnfonts.com/css/public-pixel" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: 'Public Pixel', sans-serif;
-            color: #525252;
-            font-size: 16px; /* Tamaño de texto más pequeño */
-            line-height: 1.6; /* Mayor separación entre líneas */
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: #f6d4b1;
-            cursor: url('./images/chebu.png'), auto;
-        }
-        header, footer, .portfolio-block {
-            margin: 20px;
-            padding: 10px;
-            text-align: center;
-            border: 2px dashed #525252;
-        }
-        header h1, .section-title {
-            display: inline-block;
-            background-color: #525252;
-            color: #f6d4b1;
-            padding: 5px;
-            margin: 10px 0;
-            box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.5);
-            transition: box-shadow 0.3s, color 0.3s; /* Agregando transición de color */
-            font-size: 52px; /* Tamaño de texto más grande para el encabezado */
-        }
-        header h1:hover, .section-title:hover {
-            box-shadow: 8px 8px 0px 0px rgba(0,0,0,0.5);
-            color: #457147; /* Cambio de color al pasar el ratón */
-        }
-
-                a {
-            color: #525252;
-            text-decoration: none;
-            cursor: url('./images/matri.png'), auto;
-        }
-        a:hover {
-            text-decoration: underline;
-            color: #457147; /* Cambio de color al pasar el ratón */
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        ul li {
-            display: inline;
-            margin-right: 10px;
-        }
-        .portfolio-block img {
-            height: auto;
-            width: auto;
-            max-width: 100%;
-            object-fit: cover;
-            transition: transform 0.3s; /* Transición de hundimiento */
-        }
-        .portfolio-block img:hover {
-            transform: scale(0.95); /* Efecto de hundimiento */
-        }
-        .portfolio-block h3 {
-            color: #525252; /* Color original de los títulos */
-            transition: color 0.3s; /* Transición suave de color */
-        }
-        .portfolio-block h3:hover {
-            color: #457147; /* Cambio de color al pasar el ratón */
-        }
-        footer p {
-            font-size: 8px; /* Tamaño de texto más pequeño en el footer */
-        }
-#loading {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #f6d4b1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            z-index: 1000;
-        }
-        #loading-bar-container {
-            border: 2px solid #525252;
-            width: 80%;
-            max-width: 400px;
-            height: 20px;
-            background-color: transparent;
-        }
-        #loading-bar {
-            width: 0;
-            height: 100%;
-            background-color: #525252;
-            transition: width 4s;
-        }
-        #loading-text {
-            color: #525252;
-            font-family: 'Public Pixel', sans-serif;
-            text-align: center;
-        }
-        #loading-text span {
-            animation: dots 1s steps(5, end) infinite;
-        }
-        #loading-percent {
-            color: #525252;
-            font-family: 'Public Pixel', sans-serif;
-            text-align: center;
-        }
-             #main-content {
-            display: none;
-            text-align: center;
-        }
-        #main-content h2, #main-content p {
-            text-align: center;
-        }
-        #contacto a {
-            color: #457147; /* Color de las sombras de los recuadros */
-            transition: color 0.3s; /* Transición suave para el cambio de color */
-        }
-
-        #contacto a:hover {
-            color: #000000; /* Oscurecer al color del texto al pasar el ratón por encima */
-        }
-
-        #contacto a:active {
-            color: #333333; /* Oscurecer aún más al hacer clic */
-        }
-
-        /* Media query para pantallas de dispositivos móviles */
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 16px; /* Tamaño más pequeño para dispositivos móviles */
-            }
-        }
-    </style>
+ 
 </head>
 <body>
     <div id="loading">
@@ -166,21 +31,21 @@
        <div class="portfolio-block">
     <a href="https://arrakisessenceco.carrd.co/" target="_blank">
         <h3>ARRAKIS ESSENCE CO.</h3>
-        <img src="./images/arrakis.png" alt="Descripción de la Imagen 1">
+        <img src="./images/arrakis.png" alt="Descripción de la Imagen 1" class="grayscale">
     </a>
     <p><a href="https://arrakisessenceco.carrd.co/" target="_blank">Viajar a Arrakis</a></p>
 </div>
 <div class="portfolio-block">
     <a href="https://ufohunters.carrd.co/" target="_blank">
         <h3>UFO HUNTERS</h3>
-        <img src="./images/ufo.png" alt="Descripción de la Imagen 2">
+        <img src="./images/ufo.png" alt="Descripción de la Imagen 2" class="grayscale">
     </a>
     <p><a href="https://ufohunters.carrd.co/" target="_blank">Ver Ovnis</a></p>
 </div>
 
             <div class="portfolio-block">
                 <h3>PROFESOR DE IDIOMAS</h3>
-                <img src="./images/georgiy.png" alt="Descripción de la Imagen 3">
+                <img src="./images/georgiy.png" alt="Descripción de la Imagen 3" class="grayscale">
                 
             </div>
         </section>
