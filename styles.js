@@ -1,4 +1,3 @@
-SCRTIPT.JS
 document.addEventListener('DOMContentLoaded', () => {
     let loadingBar = document.getElementById('loading-bar');
     let loadingPercent = document.getElementById('loading-percent');
