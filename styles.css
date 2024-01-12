@@ -5,7 +5,7 @@ body {
     color: #525252;
     font-size: 16px; /* Tamaño de texto más pequeño */
     line-height: 1.6; /* Mayor separación entre líneas */
-    margin: 0.5cm; /* Margen alrededor del contenido de la página */
+    margin: 0.5px; /* Margen alrededor del contenido de la página */
     padding: 0;
     box-sizing: border-box;
     background-color: #f6d4b1;
