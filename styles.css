@@ -58,9 +58,6 @@
     }
 }
 
-/* Puedes añadir más estilos personalizados aquí según tus necesidades */
-
-
 body {
     font-family: 'Public Pixel', sans-serif;
     color: #525252;
@@ -88,7 +85,14 @@ a {
 a:hover {
     text-decoration: underline;
 }
-/* Agregamos un estilo para centrar el footer en la parte inferior */
+
 footer {
     margin-top: auto;
+}
+
+/* Media query para pantallas de dispositivos móviles */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 16px; /* Tamaño más pequeño para dispositivos móviles */
+    }
 }
