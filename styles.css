@@ -17,7 +17,7 @@ header, footer, .portfolio-block {
     border: 2px dashed #525252;
 }
 
-header h1, .section-title {
+header h1 {
     display: inline-block;
     background-color: #525252;
     color: #f6d4b1;
@@ -28,7 +28,23 @@ header h1, .section-title {
     font-size: 52px; /* Tamaño de texto más grande para el encabezado */
 }
 
-header h1:hover, .section-title:hover {
+header h1:hover {
+    box-shadow: 8px 8px 0px 0px rgba(0,0,0,0.5);
+    color: #457147; /* Cambio de color al pasar el ratón */
+}
+
+.section-title {
+    display: inline-block;
+    background-color: #525252;
+    color: #f6d4b1;
+    padding: 5px;
+    margin: 10px 0;
+    box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.5);
+    transition: box-shadow 0.3s, color 0.3s; /* Agregando transición de color */
+    font-size: 42px; /* Tamaño menor que el del encabezado */
+}
+
+.section-title:hover {
     box-shadow: 8px 8px 0px 0px rgba(0,0,0,0.5);
     color: #457147; /* Cambio de color al pasar el ratón */
 }
@@ -119,14 +135,4 @@ footer p {
 }
 
 #loading-percent {
-    color: #525252;
-    font-family: 'Public Pixel', sans-serif;
-    text-align: center;
-}
-
-/* Media query para pantallas de dispositivos móviles */
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 16px; /* Tamaño más pequeño para dispositivos móviles */
-    }
-}
+    color: #525
