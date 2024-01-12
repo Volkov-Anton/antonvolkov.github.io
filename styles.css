@@ -1,3 +1,84 @@
+body {
+    font-family: 'Public Pixel', sans-serif;
+    color: #525252;
+    font-size: 16px; /* Tamaño de texto más pequeño */
+    line-height: 1.6; /* Mayor separación entre líneas */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f6d4b1;
+    cursor: url('./images/chebu.png'), auto;
+}
+
+header, footer, .portfolio-block {
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    border: 2px dashed #525252;
+}
+
+header h1, .section-title {
+    display: inline-block;
+    background-color: #525252;
+    color: #f6d4b1;
+    padding: 5px;
+    margin: 10px 0;
+    box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.5);
+    transition: box-shadow 0.3s, color 0.3s; /* Agregando transición de color */
+    font-size: 52px; /* Tamaño de texto más grande para el encabezado */
+}
+
+header h1:hover, .section-title:hover {
+    box-shadow: 8px 8px 0px 0px rgba(0,0,0,0.5);
+    color: #457147; /* Cambio de color al pasar el ratón */
+}
+
+a {
+    color: #525252;
+    text-decoration: none;
+    cursor: url('./images/matri.png'), auto;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #457147; /* Cambio de color al pasar el ratón */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.portfolio-block img {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s; /* Transición de hundimiento */
+}
+
+.portfolio-block img:hover {
+    transform: scale(0.95); /* Efecto de hundimiento */
+}
+
+.portfolio-block h3 {
+    color: #525252; /* Color original de los títulos */
+    transition: color 0.3s; /* Transición suave de color */
+}
+
+.portfolio-block h3:hover {
+    color: #457147; /* Cambio de color al pasar el ratón */
+}
+
+footer p {
+    font-size: 8px; /* Tamaño de texto más pequeño en el footer */
+}
+
 #loading {
     position: fixed;
     top: 0;
@@ -12,9 +93,17 @@
     z-index: 1000;
 }
 
+#loading-bar-container {
+    border: 2px solid #525252;
+    width: 80%;
+    max-width: 400px;
+    height: 20px;
+    background-color: transparent;
+}
+
 #loading-bar {
     width: 0;
-    height: 20px;
+    height: 100%;
     background-color: #525252;
     transition: width 4s;
 }
@@ -22,6 +111,7 @@
 #loading-text {
     color: #525252;
     font-family: 'Public Pixel', sans-serif;
+    text-align: center;
 }
 
 #loading-text span {
@@ -31,63 +121,7 @@
 #loading-percent {
     color: #525252;
     font-family: 'Public Pixel', sans-serif;
-}
-
-@keyframes dots {
-    0%, 20% {
-        color: rgba(0,0,0,0);
-        text-shadow:
-            .25em 0 0 rgba(0,0,0,0),
-            .5em 0 0 rgba(0,0,0,0);
-    }
-    40% {
-        color: #525252;
-        text-shadow:
-            .25em 0 0 rgba(0,0,0,0),
-            .5em 0 0 rgba(0,0,0,0);
-    }
-    60% {
-        text-shadow:
-            .25em 0 0 #525252,
-            .5em 0 0 rgba(0,0,0,0);
-    }
-    80%, 100% {
-        text-shadow:
-            .25em 0 0 #525252,
-            .5em 0 0 #525252;
-    }
-}
-
-body {
-    font-family: 'Public Pixel', sans-serif;
-    color: #525252;
-    font-size: 18px;
-    line-height: normal;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header, section, footer {
-    margin: 20px;
-    padding: 10px;
-}
-
-h1, h2 {
-    font-weight: 400;
-}
-
-a {
-    color: #525252;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-footer {
-    margin-top: auto;
+    text-align: center;
 }
 
 /* Media query para pantallas de dispositivos móviles */
