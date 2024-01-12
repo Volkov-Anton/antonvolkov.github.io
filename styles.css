@@ -142,7 +142,9 @@ footer p {
 section {
     margin: 10px; /* Margen agregado a todas las secciones */
 }
-
+.section-title {
+    font-size: 18px; /* Tamaño más pequeño para los títulos de las secciones */
+}
 /* Estilos para dispositivos móviles */
 @media (max-width: 600px) {
     header h1 {
