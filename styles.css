@@ -1,8 +1,8 @@
 body {
     font-family: 'Public Pixel', sans-serif;
     color: #525252;
-    font-size: 16px; /* Tamaño de texto más pequeño */
-    line-height: 1.6; /* Mayor separación entre líneas */
+    font-size: 16px;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -24,13 +24,13 @@ header h1 {
     padding: 5px;
     margin: 10px 0;
     box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.5);
-    transition: box-shadow 0.3s, color 0.3s; /* Agregando transición de color */
-    font-size: 52px; /* Tamaño de texto más grande para el encabezado */
+    transition: box-shadow 0.3s, color 0.3s;
+    font-size: 32px; /* Encabezado más grande */
 }
 
 header h1:hover {
     box-shadow: 8px 8px 0px 0px rgba(0,0,0,0.5);
-    color: #457147; /* Cambio de color al pasar el ratón */
+    color: #457147;
 }
 
 .section-title {
@@ -40,99 +40,19 @@ header h1:hover {
     padding: 5px;
     margin: 10px 0;
     box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.5);
-    transition: box-shadow 0.3s, color 0.3s; /* Agregando transición de color */
-    font-size: 42px; /* Tamaño menor que el del encabezado */
+    transition: box-shadow 0.3s, color 0.3s;
+    font-size: 24px; /* Tamaño más pequeño para los títulos de las secciones */
 }
 
 .section-title:hover {
     box-shadow: 8px 8px 0px 0px rgba(0,0,0,0.5);
-    color: #457147; /* Cambio de color al pasar el ratón */
+    color: #457147;
 }
 
-a {
-    color: #525252;
-    text-decoration: none;
-    cursor: url('./images/matri.png'), auto;
-}
+/* Resto del CSS ... */
 
-a:hover {
-    text-decoration: underline;
-    color: #457147; /* Cambio de color al pasar el ratón */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px; /* Tamaño más pequeño para móviles */
+    }
 }
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-.portfolio-block img {
-    height: auto;
-    width: auto;
-    max-width: 100%;
-    object-fit: cover;
-    transition: transform 0.3s; /* Transición de hundimiento */
-}
-
-.portfolio-block img:hover {
-    transform: scale(0.95); /* Efecto de hundimiento */
-}
-
-.portfolio-block h3 {
-    color: #525252; /* Color original de los títulos */
-    transition: color 0.3s; /* Transición suave de color */
-}
-
-.portfolio-block h3:hover {
-    color: #457147; /* Cambio de color al pasar el ratón */
-}
-
-footer p {
-    font-size: 8px; /* Tamaño de texto más pequeño en el footer */
-}
-
-#loading {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #f6d4b1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-}
-
-#loading-bar-container {
-    border: 2px solid #525252;
-    width: 80%;
-    max-width: 400px;
-    height: 20px;
-    background-color: transparent;
-}
-
-#loading-bar {
-    width: 0;
-    height: 100%;
-    background-color: #525252;
-    transition: width 4s;
-}
-
-#loading-text {
-    color: #525252;
-    font-family: 'Public Pixel', sans-serif;
-    text-align: center;
-}
-
-#loading-text span {
-    animation: dots 1s steps(5, end) infinite;
-}
-
-#loading-percent {
-    color: #525
