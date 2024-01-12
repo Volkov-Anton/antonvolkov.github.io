@@ -1,8 +1,9 @@
+/* Estilos generales, incluyendo header y .section-title */
 body {
     font-family: 'Public Pixel', sans-serif;
     color: #525252;
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 16px; /* Tamaño de texto más pequeño */
+    line-height: 1.6; /* Mayor separación entre líneas */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -25,14 +26,10 @@ header h1 {
     margin: 10px 0;
     box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.5);
     transition: box-shadow 0.3s, color 0.3s;
-    font-size: 52px; /* Encabezado más grande */
+    font-size: 32px; /* Ajuste del tamaño del encabezado */
 }
 
-header h1:hover {
-    box-shadow: 8px 8px 0px 0px rgba(0,0,0,0.5);
-    color: #457147;
-}
-
+/* Estilos para los títulos de las secciones */
 .section-title {
     display: inline-block;
     background-color: #525252;
@@ -41,18 +38,15 @@ header h1:hover {
     margin: 10px 0;
     box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.5);
     transition: box-shadow 0.3s, color 0.3s;
-    font-size: 18px; /* Tamaño más pequeño para los títulos de las secciones */
+    font-size: 24px; /* Tamaño más pequeño para los títulos de las secciones */
 }
 
-.section-title:hover {
-    box-shadow: 8px 8px 0px 0px rgba(0,0,0,0.5);
-    color: #457147;
-}
-
-/* Resto del CSS ... */
-
+/* Estilos para dispositivos móviles */
 @media (max-width: 600px) {
     header h1 {
-        font-size: 24px; /* Tamaño más pequeño para móviles */
+        font-size: 24px; /* Tamaño ajustado para móviles */
+    }
+    .section-title {
+        font-size: 20px; /* Tamaño ajustado para títulos de sección en móviles */
     }
 }
