@@ -26,10 +26,9 @@ header h1 {
     margin: 10px 0;
     box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.5);
     transition: box-shadow 0.3s, color 0.3s;
-    font-size: 32px; /* Ajuste del tamaño del encabezado */
+    font-size: 32px; /* Tamaño del encabezado más grande */
 }
 
-/* Estilos para los títulos de las secciones */
 .section-title {
     display: inline-block;
     background-color: #525252;
@@ -38,15 +37,15 @@ header h1 {
     margin: 10px 0;
     box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.5);
     transition: box-shadow 0.3s, color 0.3s;
-    font-size: 24px; /* Tamaño más pequeño para los títulos de las secciones */
+    font-size: 24px; /* Tamaño de los títulos de las secciones */
 }
 
 /* Estilos para dispositivos móviles */
 @media (max-width: 600px) {
     header h1 {
-        font-size: 24px; /* Tamaño ajustado para móviles */
+        font-size: 24px; /* Tamaño ajustado para el encabezado en móviles */
     }
     .section-title {
-        font-size: 20px; /* Tamaño ajustado para títulos de sección en móviles */
+        font-size: 20px; /* Tamaño ajustado para los títulos de las secciones en móviles */
     }
 }
