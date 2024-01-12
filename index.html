@@ -37,7 +37,8 @@
             box-shadow: 8px 8px 0px 0px rgba(0,0,0,0.5);
             color: #457147; /* Cambio de color al pasar el ratón */
         }
-        a {
+
+                a {
             color: #525252;
             text-decoration: none;
             cursor: url('./images/matri.png'), auto;
@@ -74,7 +75,7 @@
         footer p {
             font-size: 8px; /* Tamaño de texto más pequeño en el footer */
         }
-        #loading {
+#loading {
             position: fixed;
             top: 0;
             left: 0;
@@ -113,7 +114,7 @@
             font-family: 'Public Pixel', sans-serif;
             text-align: center;
         }
-        #main-content {
+             #main-content {
             display: none;
             text-align: center;
         }
@@ -131,6 +132,13 @@
 
         #contacto a:active {
             color: #333333; /* Oscurecer aún más al hacer clic */
+        }
+
+        /* Media query para pantallas de dispositivos móviles */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 16px; /* Tamaño más pequeño para dispositivos móviles */
+            }
         }
     </style>
 </head>
