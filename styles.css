@@ -1,5 +1,3 @@
-/* Estilos generales, incluyendo header y .section-title */
-
 body {
     font-family: 'Public Pixel', sans-serif;
     color: #525252;
@@ -10,6 +8,13 @@ body {
     box-sizing: border-box;
     background-color: #f6d4b1;
     cursor: url('./images/chebu.png'), auto;
+}
+
+header, footer, .portfolio-block {
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    border: 2px dashed #525252;
 }
 
 header h1 {
@@ -31,7 +36,111 @@ header h1 {
     margin: 10px 0;
     box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.5);
     transition: box-shadow 0.3s, color 0.3s;
-    font-size: 24px; /* Tamaño de los títulos de las secciones más pequeño */
+    font-size: 20px; /* Tamaño ajustado para los títulos de las secciones */
+}
+
+a {
+    color: #525252;
+    text-decoration: none;
+    cursor: url('./images/matri.png'), auto;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #457147; /* Cambio de color al pasar el ratón */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.portfolio-block img {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.portfolio-block img:hover {
+    transform: scale(0.95);
+}
+
+.portfolio-block h3 {
+    color: #525252;
+    transition: color 0.3s;
+}
+
+.portfolio-block h3:hover {
+    color: #457147;
+}
+
+footer p {
+    font-size: 8px;
+}
+
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f6d4b1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+#loading-bar-container {
+    border: 2px solid #525252;
+    width: 80%;
+    max-width: 400px;
+    height: 20px;
+    background-color: transparent;
+}
+
+#loading-bar {
+    width: 0;
+    height: 100%;
+    background-color: #525252;
+    transition: width 4s;
+}
+
+#loading-text {
+    color: #525252;
+    font-family: 'Public Pixel', sans-serif;
+    text-align: center;
+}
+
+#loading-text span {
+    animation: dots 1s steps(5, end) infinite;
+}
+
+#loading-percent {
+    color: #525252;
+    font-family: 'Public Pixel', sans-serif;
+    text-align: center;
+}
+
+#main-content {
+    display: none;
+    text-align: center;
+}
+
+#main-content h2, #main-content p {
+    text-align: center;
+}
+
+section {
+    margin: 10px; /* Margen agregado a todas las secciones */
 }
 
 /* Estilos para dispositivos móviles */
@@ -40,6 +149,6 @@ header h1 {
         font-size: 24px; /* Tamaño ajustado para el encabezado en móviles */
     }
     .section-title {
-        font-size: 20px; /* Tamaño ajustado para los títulos de las secciones en móviles */
+        font-size: 16px; /* Tamaño ajustado para los títulos de las secciones en móviles */
     }
 }
