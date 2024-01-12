@@ -9,13 +9,13 @@
         body {
             font-family: 'Public Pixel', sans-serif;
             color: #525252;
-            font-size: 18px;
-            line-height: normal;
+            font-size: 16px; /* Tamaño de texto más pequeño */
+            line-height: 1.6; /* Mayor separación entre líneas */
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background-color: #f6d4b1; /* Color de fondo */
-            cursor: url('./images/chebu.png'), auto; /* Puntero personalizado para todo el cuerpo */
+            background-color: #f6d4b1;
+            cursor: url('./images/chebu.png'), auto;
         }
         header, footer, .portfolio-block {
             margin: 20px;
@@ -23,25 +23,41 @@
             text-align: center;
             border: 2px dashed #525252;
         }
-        header h1, .section-title {
+        header h1 {
             display: inline-block;
             background-color: #525252;
             color: #f6d4b1;
             padding: 5px;
             margin: 10px 0;
             box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.5);
-            transition: box-shadow 0.3s;
+            transition: box-shadow 0.3s, color 0.3s; /* Agregando transición de color */
+            font-size: 22px; /* Tamaño de texto más grande para el encabezado */
         }
-        header h1:hover, .section-title:hover {
+        header h1:hover {
             box-shadow: 8px 8px 0px 0px rgba(0,0,0,0.5);
+            color: #457147; /* Cambio de color al pasar el ratón */
+        }
+        .section-title {
+            display: inline-block;
+            background-color: #525252;
+            color: #f6d4b1;
+            padding: 5px;
+            margin: 10px 0;
+            box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.5);
+            transition: box-shadow 0.3s, color 0.3s;
+        }
+        .section-title:hover {
+            box-shadow: 8px 8px 0px 0px rgba(0,0,0,0.5);
+            color: #457147;
         }
         a {
             color: #525252;
             text-decoration: none;
-            cursor: url('./images/matri.png'), auto; /* Puntero personalizado para los enlaces */
+            cursor: url('./images/matri.png'), auto;
         }
         a:hover {
             text-decoration: underline;
+            color: #457147; /* Cambio de color al pasar el ratón */
         }
         ul {
             list-style: none;
@@ -52,10 +68,25 @@
             margin-right: 10px;
         }
         .portfolio-block img {
-            height: auto; /* Altura fija que desees */
-            width: auto; /* Ancho automático para mantener la relación de aspecto */
-            max-width: 100%; /* Asegura que la imagen no sobrepase el ancho del contenedor */
-            object-fit: cover; /* Ajusta la imagen dentro del contenedor */
+            height: auto;
+            width: auto;
+            max-width: 100%;
+            object-fit: cover;
+            transition: transform 0.3s; /* Transición de hundimiento */
+            cursor: pointer; /* Cursor como indicador de enlace */
+        }
+        .portfolio-block img:hover {
+            transform: scale(0.95); /* Efecto de hundimiento */
+        }
+        .portfolio-block h3 {
+            color: #525252;
+            transition: color 0.3s; /* Transición suave de color */
+        }
+        .portfolio-block h3:hover {
+            color: #457147; /* Cambio de color al pasar el ratón */
+        }
+        footer p {
+            font-size: 14px; /* Tamaño de texto más pequeño en el footer */
         }
         #loading {
             position: fixed;
