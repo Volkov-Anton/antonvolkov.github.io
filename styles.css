@@ -135,10 +135,21 @@ footer p {
     text-align: center;
 }
 
-#main-content h2, #main-content p {
+#main-content h2 {
     text-align: center;
+	font-size: 56px;
 }
-
+#main-content h1 {
+    text-align: center;
+	font-size: 100px;
+}
+.grayscale {
+    filter: grayscale(1);
+    transition: 1s;
+   }
+   .grayscale:hover {
+    filter: grayscale(0);
+   }
 section {
     margin: 10px; /* Margen agregado a todas las secciones */
 }
@@ -153,5 +164,14 @@ section {
     .section-title {
         font-size: 16px; /* Tamaño ajustado para los títulos de las secciones en móviles */
     }
+	#main-content h1 {
+    text-align: center;
+	font-size: 56px;
 }
+#main-content h2 {
+    text-align: center;
+	font-size: 32px;
+}
+}
+
 
