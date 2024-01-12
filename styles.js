@@ -22,8 +22,3 @@ document.addEventListener('DOMContentLoaded', () => {
         loadingPercent.innerText = percent + '%';
     }, 3960);
 });
-
-
-
-
-
