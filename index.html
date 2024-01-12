@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anton Volkov - Diseñador Web | Desarrollador iOS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/public-pixel" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Public Pixel', sans-serif;
+            color: #525252;
+            font-size: 18px;
+            line-height: normal;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f6d4b1; /* Color de fondo */
+            cursor: url('/images/chebu.png'), auto; /* Puntero personalizado para todo el cuerpo */
+        }
+        header, footer, .portfolio-block {
+            margin: 20px;
+            padding: 10px;
+            text-align: center;
+            border: 2px dashed #525252;
+        }
+        header h1, .section-title {
+            display: inline-block;
+            background-color: #525252;
+            color: #f6d4b1;
+            padding: 5px;
+            margin: 10px 0;
+            box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.5);
+            transition: box-shadow 0.3s;
+        }
+        header h1:hover, .section-title:hover {
+            box-shadow: 8px 8px 0px 0px rgba(0,0,0,0.5);
+        }
+        a {
+            color: #525252;
+            text-decoration: none;
+            cursor: url('/images/matri.png'), auto; /* Puntero personalizado para los enlaces */
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        .portfolio-block img {
+            height: auto; /* Altura fija que desees */
+            width: auto; /* Ancho automático para mantener la relación de aspecto */
+            max-width: 100%; /* Asegura que la imagen no sobrepase el ancho del contenedor */
+            object-fit: cover; /* Ajusta la imagen dentro del contenedor */
+        }
+        #loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #f6d4b1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+        #loading-bar-container {
+            border: 2px solid #525252;
+            width: 80%;
+            max-width: 400px;
+            height: 20px;
+            background-color: transparent;
+        }
+        #loading-bar {
+            width: 0;
+            height: 100%;
+            background-color: #525252;
+            transition: width 4s;
+        }
+        #loading-text {
+            color: #525252;
+            font-family: 'Public Pixel', sans-serif;
+            text-align: center;
+        }
+        #loading-text span {
+            animation: dots 1s steps(5, end) infinite;
+        }
+        #loading-percent {
+            color: #525252;
+            font-family: 'Public Pixel', sans-serif;
+            text-align: center;
+        }
+        #main-content {
+            display: none;
+            text-align: center;
+        }
+        #main-content h2, #main-content p {
+            text-align: center;
+        }
+        #contacto a {
+            color: #457147; /* Color de las sombras de los recuadros */
+            transition: color 0.3s; /* Transición suave para el cambio de color */
+        }
+
+        #contacto a:hover {
+            color: #000000; /* Oscurecer al color del texto al pasar el ratón por encima */
+        }
+
+        #contacto a:active {
+            color: #333333; /* Oscurecer aún más al hacer clic */
+        }
+    </style>
+</head>
+<body>
+<body>
+    <div id="loading">
+        <div id="loading-bar-container">
+            <div id="loading-bar"></div>
+        </div>
+        <p id="loading-text">Cargando<span>...</span></p>
+        <p id="loading-percent">0%</p>
+    </div>
+
+    <div id="main-content">
+        <header>
+            <h1>Anton Volkov</h1>
+            <p>UX/UI Design | Web Content Creator | Swift Padawan | iOS Development</p>
+        </header>
+
+        <section id="sobre-mi">
+            <div class="section-title"><h2>Oui, C'est Moi</h2></div>
+            <p>Hola, soy Anton Volkov, especialista en sitios web con gran entusiasmo por aprender a elaborar aplicaciones para iOS y a su vez por las oportunidades que brinda Unreal Engine para confeccionar videojuegos. Actualmente, profundizo en Swift para avanzar en el desarrollo de software para Apple, siguiendo las directrices de Human Interface Guidelines para proporcionar experiencias que puedan satisfacer a sus usuarios. Paralelamente, investigo Unreal Engine con la esperanza de hacer videojuegos en un futuro.</p>
+        </section>
+
+        <section id="portafolio">
+            <div class="section-title"><h2>Portafolio</h2></div>
+            <div class="portfolio-block">
+                <h3>ARRAKIS ESSENCE CO.</h3>
+                <img src="/images/arrakis.png" alt="Descripción de la Imagen 1">
+                <p><a href="https://arrakisessenceco.carrd.co/" target="_blank">Viajar a Arrakis</a></p>
+            </div>
+            <div class="portfolio-block">
+                <h3>UFO HUNTERS</h3>
+                <img src="/images/ufo.png" alt="Descripción de la Imagen 2">
+                <p><a href="https://ufohunters.carrd.co/" target="_blank">Ver Ovnis</a></p>
+            </div>
+            <div class="portfolio-block">
+                <h3>PROFESOR DE IDIOMAS</h3>
+                <img src="/images/georgiy.png" alt="Descripción de la Imagen 3">
+                
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <div class="section-title"><h2>Habilidades</h2></div>
+            <p>Mi labor en la galaxia web se centraba hasta ahora en el supuesto buen gusto que tengo para generar experiencias de uso y visuales que la gente pueda valorar. Dicen que destaco en el  UI y en el UX Writing y entre mis logros cuenta certificarme en Google UX y adiestrar un gato azul ruso. Me estoy quitando de usar plataformas como WordPress, Wix, Framer y Webflow, fundamentales para un servidor hasta ahora, en el proceso de transformar ideas digitales en realidad. El SEO y la creación de contenidos son aspectos que tampoco se me han dado mal, entendiendo que un buen prototipo debe ser accesible y atractivo sin complicaciones, pero a su vez, debe ser encontrado con facilidad. Valoro el trabajo en equipo con intercambio de impresiones abierto y a la gente que es fan de las producciones de Studio Ghibli. Trato siempre de estar aprendiendo de colegas y clientes tanto como busco aportarles.</p>
+        </section>
+
+        <section id="contacto">
+            <div class="section-title"><h2>Contacto</h2></div>
+            <p>Conecta conmigo por medio de las redes sociales:</p>
+            <ul>
+                <li><a href="https://twitter.com/tuUsuario" target="_blank">Twitter</a></li>
+                <li><a href="https://github.com/tuUsuario" target="_blank">GitHub</a></li>
+            </ul>
+    
+        </section>
+
+        <footer>
+            <p>© 2024 Anton Volkov</p>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let loadingBar = document.getElementById('loading-bar');
+            let loadingPercent = document.getElementById('loading-percent');
+            let percent = 0;
+
+            let loadingInterval = setInterval(() => {
+                percent++;
+                loadingBar.style.width = percent + '%';
+                loadingPercent.innerText = percent + '%';
+
+                if (percent === 100) {
+                    clearInterval(loadingInterval);
+                    setTimeout(() => {
+                        document.getElementById('loading').style.display = 'none';
+                        document.getElementById('main-content').style.display = 'block';
+                    }, 4000);
+                }
+            }, 40);
+
+            setTimeout(() => {
+                clearInterval(loadingInterval);
+                percent = 99;
+                loadingBar.style.width = percent + '%';
+                loadingPercent.innerText = percent + '%';
+                setTimeout(() => {
+                    document.getElementById('loading').style.display = 'none';
+                    document.getElementById('main-content').style.display = 'block';
+                }, 2000);
+            }, 3960);
+        });
+    </script>
+</body>
+</html>
