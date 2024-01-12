@@ -1,21 +1,15 @@
 /* Estilos generales, incluyendo header y .section-title */
+
 body {
     font-family: 'Public Pixel', sans-serif;
     color: #525252;
     font-size: 16px; /* Tamaño de texto más pequeño */
     line-height: 1.6; /* Mayor separación entre líneas */
-    margin: 2;
-    padding: 2;
+    margin: 0.5cm; /* Margen alrededor del contenido de la página */
+    padding: 0;
     box-sizing: border-box;
     background-color: #f6d4b1;
     cursor: url('./images/chebu.png'), auto;
-}
-
-header, footer, .portfolio-block {
-    margin: 20px;
-    padding: 10px;
-    text-align: center;
-    border: 2px dashed #525252;
 }
 
 header h1 {
@@ -37,7 +31,7 @@ header h1 {
     margin: 10px 0;
     box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.5);
     transition: box-shadow 0.3s, color 0.3s;
-    font-size: 24px; /* Tamaño de los títulos de las secciones */
+    font-size: 24px; /* Tamaño de los títulos de las secciones más pequeño */
 }
 
 /* Estilos para dispositivos móviles */
