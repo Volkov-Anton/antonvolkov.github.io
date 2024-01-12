@@ -41,7 +41,7 @@ header h1:hover {
     margin: 10px 0;
     box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.5);
     transition: box-shadow 0.3s, color 0.3s;
-    font-size: 24px; /* Tamaño más pequeño para los títulos de las secciones */
+    font-size: 18px; /* Tamaño más pequeño para los títulos de las secciones */
 }
 
 .section-title:hover {
